@@ -1,5 +1,8 @@
-# from src.livro.livro import Livro
+from src.livro.livro import Livro
 
 
 def test_cria_livro():
-    pass  # Seu teste deve ser escrito aqui
+    livro = Livro("Antropologia", "Maria Aparecida Lopes", 292)
+    assert livro.titulo == "Antropologia"
+    assert livro.autor == "Maria Aparecida Lopes"
+    assert livro.paginas == 292
